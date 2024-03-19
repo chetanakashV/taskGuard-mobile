@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "978494208091",
+    "project_id": "taskguard-a06f5",
+    "storage_bucket": "taskguard-a06f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978494208091:android:7becdc221d2262ddb2277e",
+        "android_client_info": {
+          "package_name": "com.chetanakashv.taskGuard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2VAmZuF2DqT21pO7TtpptMwmVtMc0skc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

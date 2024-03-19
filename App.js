@@ -1,12 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import GuardHome from './Components/GuardHome';
+import AdminHome from './Components/AdminHome';
+import Landing from './Components/Landing';
+import { AppRegistry } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+
+// AppRegistry.registerComponent('main', () => Landing)
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator>
+     <Stack.Screen name = "home" component = {Landing} />
+     <Stack.Screen name = "user" component = {GuardHome} />
+     <Stack.Screen name = "admin" component = {AdminHome} />
+    </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
